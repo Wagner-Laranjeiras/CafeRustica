@@ -1,0 +1,376 @@
+
+/* ================================================================================================
+Page 3
+=================================================================================================== */
+
+.page-3 {
+  background-color: var(--clr-neutral-dark);
+  height: auto;
+  padding: 16% 6.4%;
+  position: relative;
+}
+
+.page-3__h2 {
+  color: var(--clr-neutral-light);
+  width: 16ch;
+  padding-bottom: 4rem;
+}
+
+.shop-preview {
+  display: flex;
+  width: 100%;
+  max-width: 100rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-preview {
+  width: calc((100% - 20px)/2);
+  padding-bottom: 2rem;
+}
+
+.product-preview__subheader {
+  color: var(--clr-neutral-light);
+}
+
+.product-preview__paragraph {
+  color: var(--clr-neutral-medium-dark);
+}
+
+.product-preview__img {
+  width: 100%;
+  padding-bottom: 1.1rem;
+}
+
+.product-preview__svg {
+  filter: invert();  /* IMPORTANT: function also affects the color of any element with this class. Ex.: border*/
+  padding-top: 0.6vh; 
+  padding-bottom: 4.1rem;
+  height: 3vh;
+  display: inline-block;
+}
+
+.page-3__button {
+  border: 3px solid var(--clr-neutral-light);
+  padding: 15px 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* Herkunft subsection 
+=================================================================================================== */
+
+.herkunft-subsection {
+  background-image: url(images/FEND-Coffee-bags-2.jpg);
+  background-color: var(--clr-bg-blending);
+  background-blend-mode: overlay;  
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  min-height: 25rem;
+}
+
+.herkunft-subsection__article {
+  text-align: center;
+  margin: 0 auto;
+  padding: 8.7rem 0 8.7rem 0;
+  max-width: 50%;
+}
+
+.herkunft-subsection__h3 {
+  color: var(--clr-neutral-light);
+  padding-bottom: 2vh;
+}
+
+.herkunft-subsection__paragraph {
+  color: var(--clr-neutral-light);
+  padding-bottom: 2vh;
+}
+
+/* ================================================================================================
+Page 4
+=================================================================================================== */
+.page-4 {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16% 6.4% 18% 6.4%;
+}
+
+.page-4__h3 {
+  padding-bottom: 3.5rem;
+}
+
+.page-4__img {
+  height: 50vh;
+  padding-bottom: 4.4rem;
+}
+
+.page-4__description {
+  display: flex;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.item-description {
+  width: min-content;
+  margin: 0 auto;
+}
+
+.item-description__img {
+  margin: 0 auto;
+  padding-bottom: 1.8rem;
+}
+
+.item-description__paragraph {
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 4rem;
+}
+
+.page-4__button {
+  margin-top: 1.6rem;
+}
+
+/* Map subsection 
+=================================================================================================== */
+.map {
+  height: 45%;
+}
+
+.map__h2 {
+  padding: 0 6.4% 3.5rem 6.4%;
+}
+
+
+/* ================================================================================================
+Page 5 (Footer)
+=================================================================================================== */
+
+.footer {
+  background-color: var(--clr-neutral-dark);
+  height: auto;
+  padding: 16% 6.4% 14% 6.4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.footer__svg {
+  filter: invert();
+  align-self: start;
+  width: 3.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer__h2 {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-header-footer);
+  font-weight: 900;
+  color: var(--clr-neutral-light);
+}
+
+.footer__subheader {
+  color: var(--clr-neutral-light);
+  font-size: var(--fs-subhead);
+  padding-bottom: 5.1rem;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding-bottom: 2.6rem;
+}
+
+.footer-details__paragraph-1 {
+  width: 24ch;
+  color: var(--clr-neutral-light);
+}
+
+.footer-details__paragraph-2 {
+  width: 14ch;
+  color: var(--clr-neutral-light);
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.footer-li {
+  width: 50%;
+  max-width: 20%;
+}
+
+.footer-li__a {
+  text-decoration: none;
+  color: var(--clr-neutral-light);
+  font-size: var(--fs-body);
+  line-height: var(--line-height-body);
+  font-family: var(--ff-body);
+  font-weight: 400;
+}
+
+
+/* Media Queries */
+@media (min-width: 576px) { 
+  
+}
+
+@media (min-width: 768px) { 
+  
+ }
+
+@media (min-width: 992px) {
+  :root {
+    --ff-headings: 'Roboto', sans-serif;
+    --ff-body: 'Roboto', sans-serif;
+
+    --fs-h1: 9.6rem;
+    --fs-h2: 4.8rem;
+    --fs-h3: 4.2rem;
+
+    --fs-subhead: 1.8rem;
+    --fs-body: 1.8rem;
+
+    --fs-header-footer: 4.2rem;
+
+    --clr-neutral-gray: #3A3734;
+  }
+
+}
+/* ================================================================================================
+Page 1 (Header)
+=================================================================================================== */
+  .header {
+    height: 65vh;
+  }
+
+  .nav__menu {
+    height: 2.5rem;
+    width: 2.5rem;
+    filter: invert(99%) sepia(6%) saturate(0%) hue-rotate(76deg) brightness(103%) contrast(105%);
+  }
+
+/* ================================================================================================
+Page 2
+=================================================================================================== */
+.page-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16% 6.4%;
+  height: auto;
+}
+
+.info-1 {
+  width: 60%;
+  max-width: 50.8rem;
+  order: 1;
+}
+
+.info-1__h2 {
+  padding-bottom: 3.5rem;
+}
+
+.info-1__paragraph {
+  padding-bottom: 3.5rem;
+}
+
+.page-2-details {
+  display: flex;
+  width: 88%;
+  justify-content: space-between;
+}
+
+.page-2-details__paragraph-1 {
+  width: 19ch;
+  padding-bottom: 4rem;
+}
+
+.page-2-details__paragraph-2 {
+  width: 15ch;
+  padding-bottom: 4rem;
+}
+
+.page-2__img-1 {
+  width: 50%;
+  padding-bottom: 4rem;
+  order: 2;
+}
+
+.info-2 {
+  max-width: 42rem;
+  width: 60%;
+  order: 4;
+  align-self: center;
+}
+
+.info-2__h3 {
+  padding-bottom: 1.2rem;
+}
+
+.info-2__paragraph {
+  padding-bottom: 4rem;
+}
+
+.page-2__img-2 {
+  width: 52%;
+  order: 3;
+}
+
+  
+
+/* ================================================================================================
+Page 3
+=================================================================================================== */
+
+  
+
+
+
+
+
+/* Herkunft subsection 
+=================================================================================================== */
+
+.herkunft-subsection {
+  background-image: url(images/FEND-Coffee-bags-2.jpg);
+  background-color: var(--clr-bg-blending);
+  background-blend-mode: overlay;  
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  min-height: 25rem;
+}
+
+.herkunft-subsection__article {
+  text-align: center; 
+  padding: 12vh;
+  max-width: 30.6rem;
+}
+
+.herkunft-subsection__h3 {
+  display: none;
+}
+
+.herkunft-subsection__paragraph {
+  color: var(--clr-neutral-light);
+  padding-bottom: 2vh;
+}
+
+
+
+
+
+
+
+
