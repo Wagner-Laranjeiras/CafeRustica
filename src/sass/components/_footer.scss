@@ -9,7 +9,7 @@
   }
   
   .footer__svg {
-    filter: invert();
+    filter: invert(99%) sepia(6%) saturate(0%) hue-rotate(76deg) brightness(103%) contrast(105%);
     align-self: start;
     width: 3.5rem;
     padding-bottom: 1.5rem;
