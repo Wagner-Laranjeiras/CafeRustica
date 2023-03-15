@@ -1,0 +1,276 @@
+
+/* ================================================================================================
+Page 1 (Header)
+=================================================================================================== */
+
+.header {
+    background-blend-mode: overlay;
+    background-color: var(--clr-bg-blending);
+    background-image: url(images/header_images/header_startseite.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .h1__header {
+    text-align: center;
+  }
+  
+  .header__subheader {
+    text-align: center; 
+  }
+  
+  .header__button {
+    bottom: 6.0rem;
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  
+  
+  /* ================================================================================================
+  Page 2
+  =================================================================================================== */
+  
+  .page-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16% 6.4%;
+    height: auto;
+  }
+  
+  .info-1 {
+    width: 100%;
+    max-width: 50.8rem;
+  }
+  
+  .info-1__h2 {
+    padding-bottom: 2rem;
+  }
+  
+  .info-1__paragraph {
+    padding-bottom: 2rem;
+  }
+  
+  .page-2-details {
+    display: flex;
+    width: 88%;
+    justify-content: space-between;
+  }
+  
+  .page-2-details__paragraph-1 {
+    width: 14rem;
+    padding-bottom: 4rem;
+  }
+  
+  .page-2-details__paragraph-2 {
+    width: 11rem;
+    padding-bottom: 4rem;
+  }
+  
+  .page-2__img-1 {
+    width: 80%;
+    align-self: flex-end;
+    padding-bottom: 4rem;
+  }
+  
+  .info-2 {
+    max-width: 42rem;
+  }
+  
+  .info-2__h3 {
+    padding-bottom: 1.2rem;
+  }
+  
+  .info-2__paragraph {
+    padding-bottom: 4rem;
+  }
+  
+  .page-2__img-2 {
+    width: 80%;
+    align-self: flex-start;
+  }
+  
+  /* ================================================================================================
+  Page 3
+  =================================================================================================== */
+  
+  .page-3 {
+    background-color: var(--clr-neutral-dark);
+    height: auto;
+    padding: 16% 6.4%;
+    position: relative;
+  }
+  
+  .page-3__h2 {
+    color: var(--clr-neutral-light);
+    width: 16ch;
+    padding-bottom: 4rem;
+  }
+  
+  .shop-preview {
+    display: flex;
+    width: 100%;
+    max-width: 100rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .product-preview {
+    width: calc((100% - 20px)/2);
+    padding-bottom: 2rem;
+  }
+  
+  .product-preview__subheader {
+    color: var(--clr-neutral-light);
+  }
+  
+  .product-preview__paragraph {
+    color: var(--clr-neutral-medium-dark);
+  }
+  
+  .product-preview__img {
+    width: 100%;
+    padding-bottom: 1.1rem;
+  }
+  
+  .product-preview__svg {
+    filter: invert();  /* IMPORTANT: function also affects the color of any element with this class. Ex.: border*/
+    padding-top: 0.6vh; 
+    padding-bottom: 4.1rem;
+    height: 3vh;
+    display: inline-block;
+  }
+  
+  .page-3__button {
+    border: 3px solid var(--clr-neutral-light);
+    padding: 15px 40px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  /* Herkunft subsection 
+  =================================================================================================== */
+  
+  .herkunft-subsection {
+    background-image: url(images/FEND-Coffee-bags-2.jpg);
+    background-color: var(--clr-bg-blending);
+    background-blend-mode: overlay;  
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    min-height: 25rem;
+  }
+  
+  .herkunft-subsection__article {
+    text-align: center;
+    margin: 0 auto;
+    padding: 8.7rem 0 8.7rem 0;
+    max-width: 50%;
+  }
+  
+  .herkunft-subsection__h3 {
+    color: var(--clr-neutral-light);
+    padding-bottom: 2vh;
+  }
+  
+  .herkunft-subsection__paragraph {
+    color: var(--clr-neutral-light);
+    padding-bottom: 2vh;
+  }
+  
+  /* ================================================================================================
+  Page 4
+  =================================================================================================== */
+  .page-4 {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16% 6.4% 18% 6.4%;
+  }
+  
+  .page-4__h3 {
+    padding-bottom: 3.5rem;
+  }
+  
+  .page-4__img {
+    height: 50vh;
+    padding-bottom: 4.4rem;
+  }
+  
+  .page-4__description {
+    display: flex;
+    width: 100%;
+    max-width: 40rem;
+  }
+  
+  .item-description {
+    width: min-content;
+    margin: 0 auto;
+  }
+  
+  .item-description__img {
+    margin: 0 auto;
+    padding-bottom: 1.8rem;
+  }
+  
+  .item-description__paragraph {
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 4rem;
+  }
+  
+  .page-4__button {
+    margin-top: 1.6rem;
+  }
+
+  
+/* ================================================================================================
+Page 5 (Footer)
+=================================================================================================== */
+
+.footer {
+  background-color: var(--clr-neutral-dark);
+  height: auto;
+  padding: 16% 6.4% 14% 6.4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.footer__svg {
+  filter: invert();
+  align-self: start;
+  width: 3.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer__h2 {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-header-footer);
+  font-weight: 900;
+  color: var(--clr-neutral-light);
+}
+
+.footer__subheader {
+  color: var(--clr-neutral-light);
+  font-size: var(--fs-subhead);
+  padding-bottom: 5.1rem;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding-bottom: 2.6rem;
+}

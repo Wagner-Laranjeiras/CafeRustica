@@ -1,0 +1,21 @@
+ .nav {
+     align-items: center;
+     display: flex;
+     justify-content: space-between;
+     padding: 0 6.4%;
+     position: absolute;
+     top: 1.2rem;
+     width: 100%;
+ }
+
+ .nav__logo {
+     height: 3.5rem;
+     width: 3.5rem;
+     filter: invert(99%) sepia(6%) saturate(0%) hue-rotate(76deg) brightness(103%) contrast(105%);
+ }
+
+ .nav__menu {
+     height: 2.5rem;
+     width: 2.5rem;
+     filter: invert(99%) sepia(6%) saturate(0%) hue-rotate(76deg) brightness(103%) contrast(105%);
+ }
