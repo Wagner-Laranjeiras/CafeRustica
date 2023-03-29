@@ -1,18 +1,20 @@
 .button {
-    background-color: var(--clr-neutral-dark);
-    border-radius: 0.5rem;
-    color: var(--clr-neutral-light);
-    font-family: var(--ff-body);
-    font-size: var(--fs-body);
-    padding: 1.5rem  5.0rem;
-    text-align: center;
-    text-decoration: none;
-    width: fit-content;
-  }
-  
-  .button--hover:hover {
+  background-color: $clr-neutral-dark;
+  border-radius: 0.5rem;
+  color: $clr-neutral-light;
+  font-family: $ff-body;
+  font-size: var(--fs-body);
+  padding: 1.5rem 5.0rem;
+  text-align: center;
+  text-decoration: none;
+  width: fit-content;
+
+  &--hover:hover {
     background: #3A3734;
   }
-  .button--active:active {
-    background: var(--clr-papier);
+
+  &--active:active {
+    background: $clr-papier;
   }
+
+}

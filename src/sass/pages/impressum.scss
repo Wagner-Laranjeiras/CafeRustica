@@ -1,0 +1,36 @@
+.impressum__h1 {
+    visibility: hidden;
+  }
+  
+  .impressum__h2 {
+    padding-bottom: 2rem;
+  
+    &:first-child {
+      width: 9ch;
+    }
+  }
+  
+  .impressum__h3 {
+    padding-bottom: 1.6rem;
+  }
+  
+  .impressum__p {
+    padding-bottom: 2rem;
+  }
+  
+  .impressum__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14rem 6.4% 9.5rem 6.4%;
+    height: auto;
+  }
+
+  .nav {
+
+    //&__logo { filter: none; }
+    //&__menu { filter: none; }
+
+}
+
+  

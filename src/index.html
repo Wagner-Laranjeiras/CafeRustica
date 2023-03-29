@@ -13,14 +13,14 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="test">
     <header class="header">
       {{> nav }}
       <h1 class="h1 h1__header">Rustica</h1>
-        <p class="subheader header__subheader">Bio und Fair seit 1991</p>
-        <div class="header__button">
-          <a href="" class="button button--hover button--active">zum Shop</a>
-        </div>
+      <p class="subheader header__subheader">Bio und Fair seit 1991</p>
+      <div class="header__button">
+        <a href="" class="button button--hover button--active">zum Shop</a>
+      </div>
     </header>
     <!--Page 2-->
     <main>
@@ -40,7 +40,7 @@
             </p>
           </div>
         </article>
-        <img class="page-2__img-1" src="assets/images/FEND-Coffee-shop.jpg" alt="Unsere Kaffee"/>
+        <img class="page-2__img-1" src="assets/images/shop.jpg" alt="Unsere Kaffee"/>
 
         <article class="info-2">
           <h3 class="h3 | info-2__h3">Bio und Fair</h3>
@@ -53,145 +53,12 @@
         </article>
         <img
           class="page-2__img-2"
-          src="assets/images/FEND-Coffee-beans-hand-2.jpg"
+          src="assets/images/plant.jpg"
           alt="Unsere Kaffee Planze"
         />
       </section>
 
-      <!--Page 3-->
-      <section class="page-3">
-        <h2 class="h2 / page-3__h2">Entdecke unsere Kaffee Sorten</h2>
-        <div class="shop-preview">
-          <article class="product-preview">
-              <div>
-                <img
-                  class="product-preview__img"
-                  src="assets/images/FEND_Coffee_Costa-Rica 1.jpg"
-                  alt="Kaffee verpackung"
-                />
-              </div>
-              <p class="subheader product-preview__subheader">Costa Rica</p>
-              <p class="paragraph product-preview__paragraph">6,90€ – 26,90€</p>
-              <div>
-                <img
-                  class="product-preview__svg"
-                  src="assets/icons/Icon Kaffee Bohnen.svg"
-                  alt="Kaffe Bohnen"
-                />
-                <img
-                  class="product-preview__svg"
-                  src="assets/icons/Icon French Press.svg"
-                  alt="French Press"
-                />
-                <img
-                  class="product-preview__svg"
-                  src="assets/icons/Icon Kaffee Schaufel.svg"
-                  alt="Kaffee Schaufel"
-                />
-              </div>
-            </article>
-            <article class="product-preview">
-              <div>
-                <img
-                  class="product-preview__img"
-                  src="assets/images/FEND_Coffee_Costa-Rica 1.jpg"
-                  alt="Kaffee verpackung"
-                />
-              </div>
-              <p class="subheader product-preview__subheader">Costa Rica</p>
-              <p class="paragraph product-preview__paragraph">6,90€ – 26,90€</p>
-              <div>
-                <img
-                  class="product-preview__svg"
-                  src="assets/icons/Icon Kaffee Bohnen.svg"
-                  alt="Kaffe Bohnen"
-                />
-                <img
-                  class="product-preview__svg"
-                  src="assets/icons/Icon French Press.svg"
-                  alt="French Press"
-                />
-                <img
-                  class="product-preview__svg"
-                  src="assets/icons/Icon Kaffee Schaufel.svg"
-                  alt="Kaffee Schaufel"
-                />
-              </div>
-            </article>
-            <article class="product-preview">
-              <div>
-                <img
-                  class="product-preview__img"
-                  src="assets/images/FEND_Coffee_Costa-Rica 1.jpg"
-                  alt="Kaffee Verpackung"
-                />
-              </div>
-              <p class="subheader product-preview__subheader">Costa Rica</p>
-              
-              <p class="paragraph product-preview__paragraph">6,90€ – 26,90€</p>
-              
-              <div>
-                <img
-                  class="product-preview__svg"
-                  src="assets/icons/Icon Kaffee Bohnen.svg"
-                  alt="Kaffe Bohnen"
-                />
-                
-                <img
-                  class="product-preview__svg"
-                  src="assets/icons/Icon French Press.svg"
-                  alt="French Press"
-                />
-                
-                <img
-                  class="product-preview__svg"
-                  src="assets/icons/Icon Kaffee Schaufel.svg"
-                  alt="Kaffee Schaufel"
-                />
-                
-              </div>
-            </article>
-            <article class="product-preview">
-              <div>
-                <img
-                  class="product-preview__img"
-                  src="assets/images/FEND_Coffee_Costa-Rica 1.jpg"
-                  alt="Kaffee verpackung"
-                />
-              </div>
-              <p class="subheader product-preview__subheader">Costa Rica</p>
-              
-              <p class="paragraph product-preview__paragraph">6,90€ – 26,90€</p>
-              
-              <div>
-                <img
-                  class="product-preview__svg"
-                  src="assets/icons/Icon Kaffee Bohnen.svg"
-                  alt="Kaffe Bohnen"
-                />
-                
-                <img
-                  class="product-preview__svg"
-                  src="assets/icons/Icon French Press.svg"
-                  alt="French Press"
-                />
-                
-                <img
-                  class="product-preview__svg"
-                  src="assets/icons/Icon Kaffee Schaufel.svg"
-                  alt="Kaffee Schaufel"
-                />
-                
-              </div>
-            </article>
-        </div>
-
-        <a
-          href=""
-          class="button | page-3__button | button--hover | button--active"
-          >alle Produkte</a
-        >
-      </section>
+      {{> shop-preview }}
 
       <!--Herkunft subsection -->
       <section class="herkunft-subsection">
@@ -211,14 +78,14 @@
         <h3 class="h3 page-4__h3">Das steckt drin</h3>
         <img
           class="page-4__img"
-          src="assets/images/FEND_Coffee_Costa-Rica 1.jpg"
+          src="assets/images/costa_rica_1.jpg"
           alt="Kaffee verpackung"
         />
         <div class="page-4__description">
           <div class="item-description">
             <img
               class="item-description__img"
-              src="assets/icons/Icon Kaffee Tasse.svg"
+              src="assets/icons/icon_kaffee_tasse.svg"
               alt="Kaffe Tasse"
             />
             <p class="paragraph item-description__paragraph">
@@ -229,7 +96,7 @@
           <div class="item-description">
             <img
               class="item-description__img"
-              src="assets/icons/Icon Kaffee Schaufel.svg"
+              src="assets/icons/icon_kaffe_schaufel.svg"
               alt="Kaffee Schaufel"
             />
             <p class="paragraph item-description__paragraph">
@@ -240,19 +107,23 @@
           <div class="item-description">
             <img
               class="item-description__img"
-              src="assets/icons/Icon-Kaffee Pflanze.svg"
+              src="assets/icons/icon_kaffee_pflanze.svg"
               alt="Kaffee Pflanze"
             />
             <p class="paragraph item-description__paragraph">Bio Qualität</p>
           </div>
+
+          <a href="" class="button page-4__button">zum Shop</a>
         </div>
-        <a href="" class="button page-4__button">zum Shop</a>
+      
+        
       </section>
 
       <!--Map subsection -->
       {{> map }}
 
     </main>
+
     <!--Footer section -->
     {{> footer }}
 

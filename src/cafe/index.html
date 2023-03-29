@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Rústica
+    </title>
+    <link rel="stylesheet" href="/sass/main.scss"/> <!--WHY DAFOQ-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;700&family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200;300;400;500;600;700;800&family=La+Belle+Aurore&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="das_cafe_header">
+        {{> nav cafe="true" }}
+        <h1 class="das_cafe_h1">Das Cafe</h1>
+        </header>
+        <main>
+          <section class="das_cafe_container">
+            <article class="das_cafe_info-1">
+              <h2 class="h2 das_cafe__h2">Rösterei & Café</h2>
+              <p class="paragraph das_cafe__paragraph">Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen Rösterei, serviert im gemütlichen Café in der Innenstadt.</p>
+              <div class="das_cafe-details">
+                <p class="paragraph das_cafe__paragraph-1">Komm uns besuchen! Fraunhoferstr. 13, Kiel</p>
+                <p class="paragraph das_cafe__paragraph-2">Mo – Fr 8–18 Uhr Sa 11–18 Uhr</p>
+              </div> 
+              <img class="das_cafe__img-1" src="../../assets/images/machine_2.jpg" alt="">
+            </article>
+            <article>
+              <h2 class="h2 das_cafe__h2">Frisches Gebäck von nebenan</h2>
+              <p class="paragraph das_cafe__paragraph-3">Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf. Wehmütig lief ihm eine rhetorische Frage über die Wange, dann setzte es seinen Weg fort. Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort "und" und das Blindtextchen solle umkehren und wieder in sein eigenes, sicheres Land zurückkehren.
+              </p>
+            </article>
+            <!--
+            <article>
+              <img src="../../assets/images/danish_1.jpg" alt="">
+              <img src="../../assets/images/machine.jpg" alt="">
+              <img src="../../assets/images/latte_art.jpg" alt="">
+              <img src="../../assets/images/sign.jpg" alt="">
+              <img src="../../assets/images/latte_art_2.jpg" alt="">
+              <img src="../../assets/images/breakfast_1.jpg" alt="">
+              <img src="../../assets/images/list.jpg" alt="">
+              <img src="../../assets/images/latte_art_3.jpg" alt="">
+            </article>
+            -->
+           
+            <div class="gallery">
+              <div id="one" class="img short-img">
+                <img src="../../assets/images/danish_1.jpg" alt="">
+              </div>
+              <div id="two" class="img short-img">
+                <img src="../../assets/images/machine.jpg" alt="">
+              </div>
+              <div id="three" class="img long-img">
+                <img src="../../assets/images/latte_art.jpg" alt="">
+              </div>
+              <div id="four" class="img long-img">
+                <img src="../../assets/images/sign.jpg" alt="">
+              </div>
+              <div id="five" class="img long-img">
+                <img src="../../assets/images/latte_art_2.jpg" alt="">
+              </div>
+              <div id="six" class="img short-img">
+                <img src="../../assets/images/breakfast_1.jpg" alt="">
+              </div>
+              <div id="seven" class="img long-img">
+                <img src="../../assets/images/list.jpg" alt="">
+              </div>
+              <div id="eight" class="img short-img">
+                <img src="../../assets/images/latte_art_3.jpg" alt="">
+              </div>
+          </div>
+          </section>
+          
+
+          {{> map }}
+        </main>
+        
+        {{> footer }}
+</body>
+</html>

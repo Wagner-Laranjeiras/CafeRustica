@@ -5,8 +5,8 @@ Page 1 (Header)
 
 .header {
     background-blend-mode: overlay;
-    background-color: var(--clr-bg-blending);
-    background-image: url(images/header_images/header_startseite.png);
+    background-color: $clr-bg-blending;
+    background-image: url(../../assets/images/header_startseite.png);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -18,13 +18,13 @@ Page 1 (Header)
   }
   
   .h1__header {
-    text-align: center;
+    text-align: center;;
   }
   
   .header__subheader {
     text-align: center; 
   }
-  
+
   .header__button {
     bottom: 6.0rem;
     position: absolute;
@@ -97,92 +97,38 @@ Page 1 (Header)
     align-self: flex-start;
   }
   
-  /* ================================================================================================
-  Page 3
-  =================================================================================================== */
-  
-  .page-3 {
-    background-color: var(--clr-neutral-dark);
-    height: auto;
-    padding: 16% 6.4%;
-    position: relative;
-  }
-  
-  .page-3__h2 {
-    color: var(--clr-neutral-light);
-    width: 16ch;
-    padding-bottom: 4rem;
-  }
-  
-  .shop-preview {
-    display: flex;
-    width: 100%;
-    max-width: 100rem;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .product-preview {
-    width: calc((100% - 20px)/2);
-    padding-bottom: 2rem;
-  }
-  
-  .product-preview__subheader {
-    color: var(--clr-neutral-light);
-  }
-  
-  .product-preview__paragraph {
-    color: var(--clr-neutral-medium-dark);
-  }
-  
-  .product-preview__img {
-    width: 100%;
-    padding-bottom: 1.1rem;
-  }
-  
-  .product-preview__svg {
-    filter: invert(99%) sepia(6%) saturate(0%) hue-rotate(76deg) brightness(103%) contrast(105%);
-    padding-bottom: 4.1rem;
-    height: 3vh;
-    display: inline-block;
-  }
-  
-  .page-3__button {
-    border: 3px solid var(--clr-neutral-light);
-    padding: 15px 40px;
-    display: block;
-    margin: 0 auto;
-  }
-  
   
   /* Herkunft subsection 
   =================================================================================================== */
   
   .herkunft-subsection {
-    background-image: url(images/FEND-Coffee-bags-2.jpg);
-    background-color: var(--clr-bg-blending);
+    background-image: url(../../assets/images/bags_2.jpg);
+    background-color: $clr-bg-blending;
     background-blend-mode: overlay;  
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
     min-height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .herkunft-subsection__article {
     text-align: center;
-    margin: 0 auto;
-    padding: 8.7rem 0 8.7rem 0;
     max-width: 50%;
   }
   
   .herkunft-subsection__h3 {
-    color: var(--clr-neutral-light);
+    color: $clr-neutral-light;
     padding-bottom: 2vh;
   }
   
   .herkunft-subsection__paragraph {
-    color: var(--clr-neutral-light);
+    color: $clr-neutral-light;
     padding-bottom: 2vh;
+    max-width: 30rem;
   }
   
   /* ================================================================================================
@@ -191,45 +137,178 @@ Page 1 (Header)
   .page-4 {
     display: flex;
     height: auto;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    padding: 16% 6.4% 18% 6.4%;
+    padding: 6rem 6.4% 6.2rem 6.4%;
   }
   
   .page-4__h3 {
-    padding-bottom: 3.5rem;
+    margin-bottom: 3.5rem;
+    width: 100%;
+    text-align: center;
   }
   
   .page-4__img {
-    height: 50vh;
-    padding-bottom: 4.4rem;
+    width: 58%;
+    margin-bottom: 4.4rem;
   }
   
   .page-4__description {
     display: flex;
     width: 100%;
     max-width: 40rem;
+    flex-wrap: wrap;
   }
   
   .item-description {
-    width: min-content;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    align-items: center;
+    margin-bottom: 6vh;
   }
   
   .item-description__img {
-    margin: 0 auto;
-    padding-bottom: 1.8rem;
+    align-items: center;
+    margin-bottom: 2.4rem;
   }
   
   .item-description__paragraph {
-    text-align: center;
+    text-align: center; /* tirar isso na media query */
     font-weight: 500;
-    padding-bottom: 4rem;
+    width: min-content;
   }
   
   .page-4__button {
-    margin-top: 1.6rem;
+    margin: 0 auto;
+    
   }
 
- 
+  @media (min-width: $breakpoint-small) {
+    
+    .page-2 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 8.8% 7%;
+    }
+    
+    .info-1 {
+      width: 40%;
+      order: 1;
+    }
+    
+    .info-1__h2 {
+      padding-bottom: 3.5rem;
+    }
+    
+    .info-1__paragraph {
+      padding-bottom: 3.5rem;
+    }
+    
+    .page-2-details {
+      width: 88%;
+    }
+    
+    .page-2-details__paragraph-1 {
+      width: 65%;
+      padding-bottom: 4rem;
+    }
+    
+    .page-2-details__paragraph-2 {
+      width: 35%;
+      padding-bottom: 4rem;
+    }
+    
+    .page-2__img-1 {
+      width: 44%;
+      padding-bottom: 12rem;
+      order: 2;
+    }
+    
+    .info-2 {
+      width: 40%;
+      order: 4;
+      margin: 0 auto;
+    }
+    
+    .info-2__h3 {
+      padding-bottom: 1.2rem;
+    }
+    
+    .info-2__paragraph {
+      padding-bottom: 4rem;
+    }
+    
+    .page-2__img-2 {
+      width: 48%;
+      order: 3;
+    }
+    
+
+/////////////////////////////////////////////////////////////////////////////////
+    .page-4 {
+      padding: 12.5rem 6.4% 12.5rem 6.4%;;
+    }
+
+    .page-4__h3 {
+      margin-bottom: 8.8rem;
+    }
+
+    .page-4__img {
+      width: 42%;
+    }
+
+    .page-4__description {
+      flex-direction: column; 
+      width: 50%;
+      align-items: center;
+    }
+    
+    .item-description { 
+      flex-direction: row; 
+      margin-bottom: 12vh;
+    }
+    
+    .item-description__img {
+      margin: 0 3.4rem 0 0; 
+    }
+    
+    .item-description__paragraph {
+      text-align: left; /* tirar isso na media query */
+    }
+    
+  }
+  
+  @media (min-width: $breakpoint-medium) {
+    
+  }
+  
+  @media (min-width: $breakpoint-large) {
+  
+  }
+  
+  @media (min-width: $breakpoint-xlarge) {
+   
+  }
+  
+  @media (min-width: $breakpoint-xxlarge) {
+    
+  }
+
+
+
+
+
+
+
+  @media (min-width: 568px) {
+
+
+  }
+  
+  @media (min-width: 1040px) {
+    
+  }
+  

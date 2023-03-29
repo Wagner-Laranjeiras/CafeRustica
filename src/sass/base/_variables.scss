@@ -1,0 +1,62 @@
+// COLOR VARIABLES
+
+$clr-bg-blending: #0000004d;
+
+$clr-neutral-light: #FFFFFF;
+$clr-neutral-medium-light: #E9E9E9;
+$clr-neutral-medium-dark: #737373;
+$clr-neutral-dark: #1A1A1A;
+
+$clr-error-field: #ff00004d;
+$clr-error-text: #FF0000;
+
+$clr-papier: #D7BE9D;
+$clr-petrol: #006D7E;
+$clr-rosa: #EDD1C9;
+$clr-orange: #D77C12;
+
+// TYPOGRAPHY VARIABLES
+
+    // font family
+$ff-headings: 'Roboto', sans-serif;
+$ff-body: 'Roboto', sans-serif;
+
+    //font size
+:root {
+    --fs-h1: 6.4rem;
+    --fs-h2: 3.6rem;
+    --fs-h3: 3.2rem;
+
+    --fs-subhead: 1.8rem;
+    --fs-body: 1.4rem;
+
+    --fs-header-footer: 2.4rem;
+}
+
+
+// BOX MODEL VARIABLES
+
+$mobile-img-width: calc( (100vw - 60px) / 2 );
+$desktop-img-width: calc( (100vw - 100px) / 4 );
+
+// BREAKPOINTS 
+
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-xlarge: 1200px;
+$breakpoint-xxlarge: 1920px;
+
+@media (min-width: $breakpoint-large) { 
+    :root {
+        //font size
+        --fs-h1: 9.6rem;
+        --fs-h2: 4.8rem;
+        --fs-h3: 3.2rem;
+
+        --fs-subhead: 1.8rem;
+        --fs-body: 1.8rem;
+
+        --fs-header-footer: 4.2rem;
+    }
+ }

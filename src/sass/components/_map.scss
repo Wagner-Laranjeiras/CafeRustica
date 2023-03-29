@@ -1,7 +1,48 @@
-.map {
-    height: 45%;
-  }
-  
 .map__h2 {
-    padding: 0 6.4% 3.5rem 6.4%;
+  padding: 0 6.4% 3rem 6.4%;
+}
+
+.map__article {
+  height: 34vh;
+  position: relative;
+  overflow: hidden;
+}
+ 
+.map__img {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0; 
+  left: 0; 
+  height: 100%;
+  
+}
+
+@media (min-width: $breakpoint-medium ) {
+  .map__article {
+    height: 38vh;
   }
+}
+
+@media (min-width: $breakpoint-large) {
+  .map__article {
+    height: 42vh;
+  }
+}
+
+@media (min-width: $breakpoint-xlarge) {
+  .map__article {
+    height: 48vh;
+  }
+}
+
+@media (min-width: $breakpoint-xxlarge) {
+  .map__article {
+    height: 52vh;
+  }
+}
+
+
+
+
+  

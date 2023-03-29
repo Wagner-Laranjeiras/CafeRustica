@@ -1,45 +1,31 @@
-    // font family
-    $ff-headings: 'Roboto', sans-serif;
-    $ff-body: 'Roboto', sans-serif;
-
-    //font size
-    $fs-h1: 6.4rem;
-    $fs-h2: 3.6rem;
-    $fs-h3: 3.2rem;
-
-    $fs-subhead: 1.8rem;
-    $fs-body: 1.4rem;
-
-    $fs-header-footer: 2.4rem;
-
 .h1 {
-    font-size:  $fs-h1; 
+    font-size:  var(--fs-h1); 
     font-family: $ff-headings;
     font-weight: 900;
     color: $clr-neutral-light;
   }
   
   .h2 {
-    font-size: $fs-h2;
+    font-size: var(--fs-h2);
     font-family: $ff-headings;
     font-weight: 900;
   }
   
   .h3 {
-    font-size: $fs-h3;
+    font-size: var(--fs-h3);
     font-family: $ff-headings;
     font-weight: 900;
   }
       
   .subheader {
-    font-size: $fs-subhead;
+    font-size: var(--fs-subhead);
     font-family: $ff-headings;
     font-weight: 400;
     color: $clr-neutral-light;
   }
 
   .paragraph {
-    font-size: $fs-body;
+    font-size: var(--fs-body);
     font-family: $ff-body;
     font-weight: 400;
   }

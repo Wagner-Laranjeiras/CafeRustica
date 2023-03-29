@@ -11,13 +11,16 @@ module.exports = defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/index.html'),
-        nested: resolve(__dirname, 'src/sub-page/index.html')
-      }
-    }
+        cafe: resolve(__dirname, 'src/cafe/index.html'),
+        herkunft: resolve(__dirname, 'src/herkunft/index.html'),
+        contact: resolve(__dirname, 'src/contact/index.html'),
+        impressum: resolve(__dirname, 'src/impressum/index.html')
+      },
+    },
   },
   plugins: [
     imagetools(),
     htmlImages(),
-    handlebars({partialDirectory: resolve(__dirname, 'src/components'),})
-  ]
-})
+    handlebars({partialDirectory: resolve(__dirname, 'src/components')}),
+  ],
+});

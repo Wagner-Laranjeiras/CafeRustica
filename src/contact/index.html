@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Rústica
+    </title>
+    <link rel="stylesheet" href="/sass/main.scss"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;700&family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200;300;400;500;600;700;800&family=La+Belle+Aurore&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      {{> nav }}
+        <h1>Kontakt</h1>
+    </header>
+    <main class="contact">
+        <h2 class="h2 contact__h2">Du hast Fragen? Schreib uns gern!</h2>
+        <section>
+            <form class="form">
+                <article class="form__article">
+                    <label class="form__label paragraph" for="name">Name*:</label>
+                    <input class="form__input paragraph" type="text" id="name" name="name" required aria-label="Name" placeholder="Name"/>
+                </article>
+                <article class="form__article">
+                    <label class="form__label paragraph" for="email">E-mail*:</label>
+                    <input class="form__input paragraph" type="email" id="email" name="email" required aria-label="E-mail" placeholder="E-mail"/>
+                </article>
+                <article class="form__article">
+                    <label class="form__label paragraph" for="phone">Telefonnummer:</label>
+                    <input class="form__input paragraph" type="tel" id="phone" name="phone" aria-label="Telefonnummer" placeholder="Telefonnummer"/>
+                </article>
+                <article class="form__article">
+                    <label class="paragraph" for="select">Auswahl:</label>
+                    <select class="form__input paragraph" id="select" name="select" required aria-label="Auswahl">
+                      <option class="paragraph" value="">Dein Betreff</option>
+                      <option class="paragraph" value="option1">Fragen zur Lieferung</option>
+                      <option class="paragraph" value="option2">Fragen zum Produkt</option>
+                      <option class="paragraph" value="option3">Vertriebs Fragen</option>
+                      <option class="paragraph" value="option4">Einfach nur so!</option>
+                    </select>
+                </article>
+                <article class="form__article">
+                    <label class="form__label paragraph" for="textarea">Deine Nachricht</label>
+                    <textarea class="form__text-area paragraph" id="textarea" name="textarea" rows="4" cols="50" required aria-label="Textfeld" placeholder="Was hast du auf dem Herzen?"></textarea>
+                </article>
+                <article class="form__article form__checkbox">
+                  <input type="checkbox" name="terms" required aria-labelledby="datenschutz-label" /> 
+                  <label class="paragraph" id="terms-label">Ich akzeptiere die Datenschutzerklärung</label>
+                </article>
+                <button class="button form__button" type="submit">abschicken</button>
+              </form>
+        </section>
+    </main>
+
+    {{> footer }}
+    
+</body>
+</html>
