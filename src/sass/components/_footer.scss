@@ -3,16 +3,18 @@
   height: auto;
   padding: 16% 6.4% 14% 6.4%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   &-logo {
+
+    width: 100%;
 
     &__svg {
       filter: invert(99%) sepia(6%) saturate(0%) hue-rotate(76deg) brightness(103%) contrast(105%);
       align-self: start;
       width: 3.5rem;
-      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
     }
 
     &__h2 {
@@ -25,17 +27,19 @@
     &__subheader {
       color: $clr-neutral-light;
       font-size: var(--fs-subhead);
-      padding-bottom: 5.1rem;
+      margin-bottom: 5.1rem;
 
     }
   }
 
+  &-container__p {
+    width: 50%;
+  }
+
   &-details {
     display: flex;
-    justify-content: space-between;
-    width: 90%;
-    padding-bottom: 2.6rem;
-    max-width: 34rem;
+    width: 100%;
+    margin-bottom: 2.6rem;
 
     &__paragraph-1 {
       width: 24ch;
@@ -48,18 +52,8 @@
     }
   }
 
-  &-nav {
-    // width: auto;
-
-    &__ul {
-      display: flex;
-      justify-content: space-between;
-      width: 70%;
-    }
-
-    &__li {
-      width: 50%;
-      max-width: 20%;
+  &-links {
+    width: 50%;
 
       &__a {
         text-decoration: none;
@@ -68,48 +62,64 @@
         font-family: $ff-body;
         font-weight: 400;
       }
-    }
+
+      &__ul-1 {
+      }
+
+      &__ul-2 {
+      }
   }
 }
+
 
 
 
 @media (min-width: $breakpoint-small) {
-  .footer {
-    //padding: 16% 7% 14% 7%;
-    flex-direction: row;
+  
     
-    align-items: first baseline;
+@media (min-width: $breakpoint-medium) {
+  .footer {
+    align-items: baseline;
+    
+    
+    &-logo {
+      order: 1;
+      width: 25%;
+      align-self: baseline;
 
-    &-details {
-      flex-direction: column;
-      gap: 2.4rem;
-      
     }
 
-    &-nav {
+    &-container__p {
+      width: 100%;
+    }
 
-      width: 40%;
+    &-details {
+      width: 30%;
+      flex-direction: column;
       justify-content: space-between;
+      margin-bottom: 0;
+      order: 2;
 
-      &__ul {
-        flex-direction: row-reverse;
+      &__paragraph-1 {
+        margin-bottom: 2.7rem;
+      }
+    }
+
+    &-links {
+    width: 22.5%;
+
+      &__ul-1 {
+        order: 4
       }
 
-      &__li {
-        
+      &__ul-2 {
+        order: 3;
       }
-
     }
   }
 }
-
-@media (min-width: $breakpoint-medium) {
-  
   .footer {
     padding: 16% 7% 14% 7%;
-    flex-direction: row;
-
   }
 }
 
@@ -125,15 +135,15 @@
 }
 
 @media (min-width: $breakpoint-xlarge) {
-  
+
   .footer {
-    padding: 12% 7.8%;
+    padding: 8.6% 8%;
   }
-  
+
 }
 
 @media (min-width: $breakpoint-xxlarge) {
-  
+
   .footer {
     padding: 12% 8%;
   }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Rústica</title>
+  <link rel="stylesheet" href="/sass/main.scss"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;700&family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200;300;400;500;600;700;800&family=La+Belle+Aurore&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <header>
+    <div class="nav-dark">
+      {{> nav }}
+    </div>
+    <h1 class="sr-only">Produkt übersicht</h1>
+  </header>
+  <main>
+    <div class="product-container">
+      <img class="product-img" src="../assets/images/costa_rica_2.jpg" alt="">
+      <section class="product-info">
+        <article>
+          <h2 class="h2">Costa Rica</h2>
+          <p class="paragraph">6,90€ - 26,90€</p>
+          <p  class="paragraph">Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure. Den Gaumen umschmeichelt ein vollmundiges Haselnussaroma. Gleich probieren!</p>
+          <select class="quantity" name="" id="">
+            <option value="wie viel kaffee braucht du?">wie viel kaffee braucht du?</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+          </select>
+          <button class="button product__button">In den Warenkorb</button>
+        </article>
+        <article class="product-detail">
+          <img src="../assets/icons/icon_kaffee_bohnen.svg" alt="">
+          <p>Mild geröstet</p>
+          <img src="../assets/icons/icon_french_press.svg" alt="">
+          <p>Für French Press</p>
+          <img src="../assets/icons/icon_kaffe_schaufel.svg" alt="">
+          <p>Gemahlen oder als Bohne</p>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Beschreibung</h2>
+          <p>MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der Sierra Madre de Chiapas angebaut, ein Gebirgszug, der sich entlang der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich indianische Kleinbauern mit Anbauflächen von ein bis drei Hektar Land in Kooperativen zusammengeschlossen und verzichten komplett auf Industriedünger und Pestizide. Schonend geröstet, entwickelt diese einzigartige Spezialität ein überraschend vielschichtiges Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer Aufguss ist unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus kontrolliert ökologischem Anbau. DE-ÖKO-003 / Nicht-EU-Landwirtschaft.</p>
+        </article>
+      </section>
+    </div>
+    
+    {{> shop-preview }}
+
+  </main>
+  
+  {{> footer }}
+  
+</body>
+</html>

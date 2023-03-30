@@ -15,12 +15,14 @@
   </head>
   <body>
     <header>
-      {{> nav }}
-        <h1>Kontakt</h1>
+      <div class="nav-dark">
+        {{> nav }}
+      </div>
+      <h1 class="sr-only">Kontakt</h1>
     </header>
     <main class="contact">
         <h2 class="h2 contact__h2">Du hast Fragen? Schreib uns gern!</h2>
-        <section>
+        <section class="form-container">
             <form class="form">
                 <article class="form__article">
                     <label class="form__label paragraph" for="name">Name*:</label>
@@ -37,11 +39,11 @@
                 <article class="form__article">
                     <label class="paragraph" for="select">Auswahl:</label>
                     <select class="form__input paragraph" id="select" name="select" required aria-label="Auswahl">
-                      <option class="paragraph" value="">Dein Betreff</option>
-                      <option class="paragraph" value="option1">Fragen zur Lieferung</option>
-                      <option class="paragraph" value="option2">Fragen zum Produkt</option>
-                      <option class="paragraph" value="option3">Vertriebs Fragen</option>
-                      <option class="paragraph" value="option4">Einfach nur so!</option>
+                      <option class="form__option paragraph" value="">Dein Betreff</option>
+                      <option class="form__option paragraph" value="option1">Fragen zur Lieferung</option>
+                      <option class="form__option paragraph" value="option2">Fragen zum Produkt</option>
+                      <option class="form__option paragraph" value="option3">Vertriebs Fragen</option>
+                      <option class="form__option paragraph" value="option4">Einfach nur so!</option>
                     </select>
                 </article>
                 <article class="form__article">

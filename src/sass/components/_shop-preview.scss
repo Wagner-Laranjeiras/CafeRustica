@@ -28,6 +28,8 @@
 
   .product-preview {
     width: calc((100% - 20px)/2);
+    margin-bottom: 4rem;
+    
 
     &__img {
       width: 100%;
@@ -42,10 +44,10 @@
     }
     
     &__svg {
-      filter: invert(99%) sepia(6%) saturate(0%) hue-rotate(76deg) brightness(103%) contrast(105%);
-      padding-bottom: 4.1rem;
-      height: 3vh;
+      filter: invert(98%) sepia(7%) saturate(359%) hue-rotate(331deg) brightness(112%) contrast(83%);
+      width: 1.4rem;
       display: inline-block;
+      margin-right: 1vw;
     }
     
   }
@@ -55,9 +57,11 @@
 @media (min-width: $breakpoint-small) {
   .section-products {
     padding: 8rem 6.4%;
+
   }
   .product-preview {
     width: calc((100% - 6rem) / 4); 
+    margin-bottom: 5rem;
   }
 }
 
@@ -65,18 +69,39 @@
   .section-products {
     padding: 10rem 6.4%;
   }
+
   .product-preview {
-    width: calc((100% - 6rem) / 4); 
+    width: calc((100% - 6rem) / 4);
+    margin-bottom: 6.2rem;
   }
 }
 
 @media (min-width: $breakpoint-large) {
   .section-products {
-      padding: 12.5rem calc((100% - 92.2rem) / 2);
+    padding: 12.5rem calc((100% - 92.2rem) / 2);
+  }
 
-    &__svg {
-      padding-bottom: 9.5rem;
-    }
+  .product-preview {
+    margin-bottom: 7.4rem;
+  }
+}
+
+@media (min-width: $breakpoint-xlarge) {
+  .section-products {
+    padding: 12.5rem calc((100% - 92.2rem) / 2);
+  }
+
+  .product-preview {
+    margin-bottom: 8.6rem;
+  }
+}
+
+@media (min-width: $breakpoint-xxlarge) {
+  .section-products {
+    padding: 12.5rem calc((100% - 92.2rem) / 2);
+  }
+  .product-preview {
+    margin-bottom: 9.4rem;
   }
 }
 

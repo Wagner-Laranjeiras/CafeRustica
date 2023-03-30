@@ -3,13 +3,13 @@
     background-blend-mode: overlay;
     background-color: $clr-bg-blending;
     height: 50vh;
-    background-image: url(../../assets/images/FEND-Coffee-beans-hand-2.jpg);
+    background-image: url(../../assets/images/beans_hand_2.jpg);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
   }
   
-  .herkunft_container {
+  .herkunft-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,8 +20,9 @@
   .herkunft__h2 {
     padding-bottom: 2.4rem;
   
-    &:first-child {
+    &:first-of-type {
       padding-bottom: 1.8rem;
+      width: 12ch;
     }
   }
   
@@ -38,6 +39,87 @@
     padding-bottom: 6rem;
   }
   
-  .herkunft__img {
+  .herkunft__img-1 {
     padding-bottom: 6rem;
+    width: 80%;
+    align-self: flex-end;
   }
+
+  .herkunft__img-2 {
+    width: 74%;
+  }
+
+  @media (min-width: $breakpoint-small) {
+    
+    .herkunft-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 8.8% 7%;
+    }
+
+    .herkunft__intro {
+      width: 54%;
+      max-width: 61.2rem;
+      margin: 0 auto;
+      padding-bottom: 6%;
+    }
+
+    .herkunft__h2 {
+      padding-bottom: 2.4rem;
+    
+      &:first-child {
+        padding-bottom: 3.5rem;
+        width: 100%;
+      }
+    }
+
+  
+  }
+  
+  @media (min-width: $breakpoint-medium) {
+  }
+
+  @media (min-width: $breakpoint-large) {
+    .herkunft__intro {
+      order: 1;
+    }
+
+    .herkunft__video {
+      order: 2;
+    }
+
+
+    .herkunft__anbaugebiete {
+      width: 32%;
+      order: 3;
+    }
+
+    .herkunft__img-1 {
+      width: 56%;
+      margin-top: 10rem;
+      align-self: center;
+      order: 4;
+      padding-bottom: 6%;
+    }
+
+    .herkunft__kaffebauern {
+      order: 6;
+      width: 32%;
+      margin: 0 auto;
+    }
+
+    .herkunft__img-2 {
+      order: 5;
+      width: 42%;
+      margin-top: 10rem;
+      align-self: center;
+    }
+  }
+  
+  @media (min-width: $breakpoint-xlarge) {
+  }
+  
+  @media (min-width: $breakpoint-xxlarge) {
+  }
+
+  

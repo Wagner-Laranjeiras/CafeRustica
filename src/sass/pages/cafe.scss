@@ -1,5 +1,5 @@
 
-.das_cafe_header {
+.das-cafe_header {
     background-blend-mode: overlay;
     background-color: $clr-bg-blending;
     height: 50vh;
@@ -9,11 +9,11 @@
     background-size: cover; 
   }
 
-  .das_cafe_h1 {
+  .das-cafe_h1 {
     visibility: hidden;
   }
 
-  .das_cafe_container {
+  .das-cafe__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,70 +21,127 @@
     height: auto;
   }
   
-  .das_cafe_info-1 {
+  .das-cafe_info-1 {
     width: 100%;
     max-width: 50.8rem;
   }
   
-  .das_cafe__h2 {
+  .das-cafe__h2 {
     padding-bottom: 2rem;
   }
   
-  .das_cafe__paragraph {
+  .das-cafe__paragraph {
     padding-bottom: 2rem;
   }
   
-  .das_cafe-details {
+  .das-cafe-details {
     display: flex;
     width: 88%;
     justify-content: space-between;
   }
   
-  .das_cafe__paragraph-1 {
+  .das-cafe__paragraph-1 {
     width: 14rem;
     padding-bottom: 4rem;
   }
   
-  .das_cafe__paragraph-2 {
+  .das-cafe__paragraph-2 {
     width: 11rem;
     padding-bottom: 4rem;
   }
   
-  .das_cafe__img-1 {
+  .das-cafe__img-1 {
     width: 80%;
     padding-bottom: 4rem;
     align-self: flex-end;
   }
 
-  .das_cafe__paragraph-3 {
+  .das-cafe__paragraph-3 {
     padding-bottom: 5rem;
   }
 
   
 .gallery {
-  width: 100%;
+  width: 100vw;
   /* height_gallery = 3 * 20px + 2x height short image + 2 * height long image */
   height: calc( 3 * 20px + 2 * $mobile-img-width * 0.9 + 2 * $mobile-img-width * 1.7 );
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 20px;
 }
-
-/* if working with real images comment out line 36 to 68 */
 
 .img {
   width: $mobile-img-width;
 }
 .short-img {
-  height: calc( $mobile-img-width * /*0.9*/ 0.6 );
+  height: calc( $mobile-img-width * 0.9);
 }
 .long-img {
-  height: calc( $mobile-img-width * /*1.7*/ 1.4 );
+  height: calc( $mobile-img-width * 1.7);
 
 }
 
-@media (min-width: 768px) {
+/////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: $breakpoint-small) {
+  .das-cafe__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8.8% 7%;
+  }
+
+  .das-cafe_info-1 {
+    width: 44%;
+    order: 1;
+  }
+
+  .das-cafe__h2 {
+    padding-bottom: 3.5rem;
+
+    &:last-of-type {
+      width: 16ch;
+    }
+  }
+  
+  .das-cafe__paragraph {
+    padding-bottom: 3.5rem;
+  }
+  
+  .das-cafe-details {
+    width: 88%;
+  }
+  
+  .das-cafe-details__paragraph-1 {
+    width: 65%;
+    padding-bottom: 4rem;
+  }
+  
+  .das-cafe-details__paragraph-2 {
+    width: 35%;
+    padding-bottom: 4rem;
+  }
+
+  .das-cafe__img-1 {
+    width: 44%;
+    padding-bottom: 12rem;
+    order: 2;
+  }
+  
+  .das-cafe-details-2 {
+    width: 50%;
+    max-width: 61.2rem;
+    order: 3;
+    margin: 0 auto;
+  }
+
+  .gallery {
+    order: 4;
+  }  
+}
+
+@media (min-width: $breakpoint-medium) {
+
     .gallery {
         /* height_gallery_desk = 20px + height short image + height long image */
         height: calc( 20px + $desktop-img-width * 0.9 + $desktop-img-width * 1.7 );
@@ -106,5 +163,16 @@
     #six {order: 5;}
     #seven {order: 7;}
     #eight {order:8;}
-} 
+}
 
+@media (min-width: $breakpoint-large) {
+
+}
+
+@media (min-width: $breakpoint-xlarge) {
+
+}
+
+@media (min-width: $breakpoint-xxlarge) {
+  
+}

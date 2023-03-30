@@ -1,7 +1,11 @@
+//NAV DARK
+.nav-dark > nav > a > img { filter: none; }
+
 .contact {
     padding: 12rem 6.4% 4rem 6.4%;
     display: flex;
     flex-wrap: wrap;
+    gap: 8vw;
 }
 
 .contact__h2 {
@@ -31,12 +35,14 @@
         &:focus {
             background-color: $clr-neutral-medium-light;
             border-radius: 0;
+            outline: transparent;
         }
 
-        &:invalid {
-            background-color: $clr-error-field;
-            color: $clr-error-text;
-        }
+        // &:invalid {
+        //     background-color: $clr-error-field;
+        //     color: $clr-error-text;
+        // }
+        // JAVASCRIPT LATER
 
         &::placeholder {
             color: $clr-neutral-medium-light;
@@ -45,12 +51,22 @@
         }
     }
 
+    &__option {
+        width: 10%;
+    }
+
     &__text-area {
         height: 16rem;
         width: 100%;
         border: 0 0 .3rem 0;
         border-bottom: .3rem solid $clr-neutral-dark;
         position: relative;
+
+        &:focus {
+            background-color: $clr-neutral-medium-light;
+            border-radius: 0;
+            outline: transparent;
+        }
 
         &::placeholder {
             color: $clr-neutral-medium-light;
@@ -78,9 +94,8 @@
 
 input[type="checkbox"] {
     appearance: none;
-    background-color: #fff;
+    background-color: $clr-neutral-light;
     margin: 0 1rem 0 0;
-    font: inherit;
     color: $clr-neutral-dark;
     width: 2rem;
     height: 2rem;
@@ -88,7 +103,60 @@ input[type="checkbox"] {
     border-radius: .5rem;
     transform: translateY(-0.075em);
   }
-  
-  .form-control + .form-control {
-    margin-top: 1em;
+
+  @media (min-width: $breakpoint-small) {
+    
+    .herkunft-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 8.8% 7%;
+    }
+
+    .herkunft__intro {
+      width: 54%;
+      max-width: 61.2rem;
+      margin: 0 auto;
+      padding-bottom: 6%;
+    }
+
+    .herkunft__h2 {
+      padding-bottom: 2.4rem;
+    
+      &:first-child {
+        padding-bottom: 3.5rem;
+        width: 100%;
+      }
+    }
   }
+  
+  @media (min-width: $breakpoint-medium) {
+    .form-container {
+        width: 40%;
+        padding-bottom: 10rem;
+    }
+
+    .form {
+        margin-top: 8%;
+    }
+  }
+
+  @media (min-width: $breakpoint-large) {
+    .form-container {
+        width: 42%;
+        padding-bottom: 12rem;
+    }
+  }
+  
+  @media (min-width: $breakpoint-xlarge) {
+    .form-container {
+        width: 44%;
+    }
+  }
+  
+  @media (min-width: $breakpoint-xxlarge) {
+    .form-container {
+        width: 46%;
+        
+    }
+  }
+
