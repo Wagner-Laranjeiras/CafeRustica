@@ -36,7 +36,7 @@ $ff-body: 'Roboto', sans-serif;
 
 // BOX MODEL VARIABLES
 
-$mobile-img-width: calc( (100vw - 60px) / 2 );
+$mobile-img-width: calc( (100% - 6.4%) / 2 );
 $desktop-img-width: calc( (100vw - 100px) / 4 );
 
 // BREAKPOINTS 

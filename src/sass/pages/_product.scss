@@ -1,26 +1,214 @@
 //NAV DARK
 .nav-dark > nav > a > img { filter: none; }
 
-.product-container {
-    padding: 7.5rem 6.4% 4rem 6.4%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8vw;
+
+.product {
+    &-container {
+        padding: 7.5rem 6.4% 4rem 6.4%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &-info {
+        margin-bottom: 6rem;
+        width: 100%;
+    }
+
+    &__h2 {
+        margin-bottom: 1rem;
+    }
+
+    &__paragraph {
+        margin-bottom: 3rem;
+    }
+
+    &-img {
+        width: 100%;
+        background-color: $clr-papier;
+        margin-bottom: 3.2rem;
+    }
+
+    &__button {
+        margin: 0 auto 10rem auto;
+        display: block;
+    }
+
+    &-detail {
+        display: flex;
+    }
+
 }
 
-.product-img {
-    width: 100%;
-    background-color: $clr-papier;
+.detail-container {
+    width: 33%;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+
+    &__svg {
+        margin-bottom: 2rem;
+        height: 50%;
+    }
+
+    &__paragraph {
+        width: 9ch;
+        text-align: center;
+        height: 50%;
+    }
 }
 
-.quantity {
-    width: 100%;
+.select {
+    &-container {
+        width: 80%;
+        position: relative;
+        margin: 0 auto 3rem auto;
+    }
+
+    &-quantity {
+        width: 100%;
+        padding: 1.5rem 5.4rem 1.5rem 1.8rem;
+        border: .2rem solid $clr-neutral-dark;
+        border-radius: .5rem;
+    }
+
+    &-arrow {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $clr-neutral-dark;
+        border-radius: 0 .5rem .5rem 0;
+        width: 4.8rem;
+        height: 100%;
+        pointer-events: none;
+
+        &::before {
+            content:"";
+            position: absolute;
+            left: 50%;
+            top: 58%;
+            transform: translate(-50%);
+            width: 0;
+            height: 0;
+            border-left: .66rem solid transparent;
+            border-right: .66rem solid transparent;
+            border-top: .66rem solid $clr-neutral-medium-light;
+        }
+
+        &::after {
+            content:"";
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%);
+            width: 0;
+            height: 0;
+            border-left: .66rem solid transparent;
+            border-right: .66rem solid transparent;
+            border-bottom: .66rem solid $clr-neutral-medium-light;     
+        } 
+    }
 }
 
-.product__button {
-    margin: 0 auto;
+.beschreibung {
+    margin-bottom: 2rem;
+
+    &__h2 {
+        margin-bottom: 2rem;
+    }
 }
 
-.product-detail {
-    display: flex;
-}
+@media (min-width: $breakpoint-small) {
+    .product {
+        &-container {
+            padding: 17.2rem 6.4% 12rem 6.4%;
+        }
+
+        &-img {
+            width: 42%;
+            background-color: $clr-papier;
+            margin-bottom: 12.5rem;
+        }
+
+        &-info {
+            width: 48%;
+
+            &__flex {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        &__paragraph {
+            width: 50%;
+            margin-bottom: 4.6rem;
+        }
+
+        &__button {
+            margin: 0;
+            width: 30%;
+            display: inline;
+        }
+
+        &-detail {
+            width: 52%;
+        }
+    }
+
+    .select {
+        &-container {
+            width: 56%;
+            display: inline-block;
+            margin: 0 1.4rem 8rem 0;
+        }
+
+        &-quantity {
+            background-color: $clr-neutral-dark;
+            color: $clr-neutral-medium-light;
+        }
+    }
+
+    .detail-container {
+        width: 33%;
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+    
+        &__svg {
+            margin-bottom: 2rem;
+            height: 50%;
+        }
+    
+        &__paragraph {
+            width: 9ch;
+            text-align: center;
+            height: 50%;
+        }
+    }
+
+    .beschreibung {
+        width: 50%;
+        margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: $breakpoint-medium) {
+  
+  }
+  
+  @media (min-width: $breakpoint-large) {
+  
+  }
+  
+  @media (min-width: $breakpoint-xlarge) {
+  
+  }
+  
+  @media (min-width: $breakpoint-xxlarge) {
+    
+  }
+  
+
+
