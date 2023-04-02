@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,9 +24,11 @@
         <h2 class="h2 contact__h2">Du hast Fragen? Schreib uns gern!</h2>
         <section class="form-container">
             <form class="form">
+              <fieldset>
+                <legend class="sr-only">persönliche Daten</legend>
                 <article class="form__article">
-                    <label class="form__label paragraph" for="name">Name*:</label>
-                    <input class="form__input paragraph" type="text" id="name" name="name" required aria-label="Name" placeholder="Name"/>
+                  <label class="form__label paragraph" for="name">Name*:</label>
+                  <input class="form__input paragraph" type="text" id="name" name="name" required aria-label="Name" placeholder="Name"/>
                 </article>
                 <article class="form__article">
                     <label class="form__label paragraph" for="email">E-mail*:</label>
@@ -36,16 +38,18 @@
                     <label class="form__label paragraph" for="phone">Telefonnummer:</label>
                     <input class="form__input paragraph" type="tel" id="phone" name="phone" aria-label="Telefonnummer" placeholder="Telefonnummer"/>
                 </article>
+                <legend class="sr-only">Grund</legend>
                 <article class="form__article">
                     <label class="paragraph" for="select">Auswahl:</label>
                     <select class="form__input paragraph" id="select" name="select" required aria-label="Auswahl">
                       <option class="form__option paragraph" value="">Dein Betreff</option>
-                      <option class="form__option paragraph" value="option1">Fragen zur Lieferung</option>
-                      <option class="form__option paragraph" value="option2">Fragen zum Produkt</option>
-                      <option class="form__option paragraph" value="option3">Vertriebs Fragen</option>
-                      <option class="form__option paragraph" value="option4">Einfach nur so!</option>
+                      <option class="form__option paragraph" value="Fragen zur Lieferung">Fragen zur Lieferung</option>
+                      <option class="form__option paragraph" value="Fragen zum Produkt">Fragen zum Produkt</option>
+                      <option class="form__option paragraph" value="Vertriebs Fragen">Vertriebs Fragen</option>
+                      <option class="form__option paragraph" value="Einfach nur so!">Einfach nur so!</option>
                     </select>
                 </article>
+                <legend class="sr-only">Textbereich</legend>
                 <article class="form__article">
                     <label class="form__label paragraph" for="textarea">Deine Nachricht</label>
                     <textarea class="form__text-area paragraph" id="textarea" name="textarea" rows="4" cols="50" required aria-label="Textfeld" placeholder="Was hast du auf dem Herzen?"></textarea>
@@ -54,7 +58,8 @@
                   <input type="checkbox" name="terms" required aria-labelledby="datenschutz-label" /> 
                   <label class="paragraph" id="terms-label">Ich akzeptiere die Datenschutzerklärung</label>
                 </article>
-                <button class="button form__button" type="submit">abschicken</button>
+              </fieldset>  
+              <button class="button form__button" type="submit">abschicken</button>
               </form>
         </section>
     </main>

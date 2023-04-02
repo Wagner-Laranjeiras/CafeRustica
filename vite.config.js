@@ -16,7 +16,8 @@ module.exports = defineConfig({
         contact: resolve(__dirname, 'src/contact/index.html'),
         impressum: resolve(__dirname, 'src/impressum/index.html'),
         product: resolve(__dirname, 'src/product/index.html'),
-        shop: resolve(__dirname, 'src/shop/index.html')
+        shop: resolve(__dirname, 'src/shop/index.html'),
+        blog: resolve(__dirname, 'src/blog/index.html')
       },
     },
   },
