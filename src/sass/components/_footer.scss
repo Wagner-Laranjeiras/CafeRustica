@@ -72,15 +72,13 @@
 }
 
 
-
-
 @media (min-width: $breakpoint-small) {
-  
-    
+}
+
 @media (min-width: $breakpoint-medium) {
   .footer {
     align-items: baseline;
-    
+    padding: 12% 6.4% 10% 6.4%;
     
     &-logo {
       order: 1;
@@ -118,15 +116,11 @@
     }
   }
 }
-  .footer {
-    padding: 16% 7% 14% 7%;
-  }
-}
 
 @media (min-width: $breakpoint-large) {
 
   .footer {
-    padding: 16% 7.4% 14% 7.4%;
+    padding: 9.2% 6.4% 8.6% 6.4%;
   }
 
   .footer-logo__svg {
